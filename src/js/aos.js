@@ -197,8 +197,7 @@ const init = function init(settings) {
   }
 
   if (
-    options.startEvent === 'DOMContentLoaded' &&
-    ['complete', 'interactive'].indexOf(document.readyState) > -1
+    options.startEvent === 'DOMContentLoaded'
   ) {
     // Initialize AOS if default startEvent was already fired
     refresh(true);
